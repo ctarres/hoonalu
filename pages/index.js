@@ -1,27 +1,16 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+/* ./pages/index.js               */
+import Head from 'next/head';
+import { Navbar } from '../components/Navbar';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Hoonalu</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Ho'onalu</title>
+        <link rel='icon' href='/favicon.ico' />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Ho'onalu
-        </h1>
-
-        <p className={styles.description}>
-          Welcome to Ho'onalu
-        </p>
-      </main>
-
-      <footer className={styles.footer}>
-        <p>This is a footer</p>
-      </footer>
+      <Navbar />
+      <div className='md:container md:mx-auto'>Welcome to Ho'onalu</div>
     </div>
-  )
+  );
 }
